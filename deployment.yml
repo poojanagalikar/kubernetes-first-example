@@ -22,6 +22,7 @@ spec: #inside your deployment we need to provide spec how this deployment api wi
       labels: 
         app: myapp #this label should match with pod label. 
     spec: #we define container spec
+      containers:
         - name: myapp-container 
           image: nginx 
           ports:
